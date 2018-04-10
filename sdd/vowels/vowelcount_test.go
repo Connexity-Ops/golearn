@@ -43,7 +43,7 @@ func TestVowelCount(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := VowelCount(tt.args.s); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("Scan() = %v, want %v", got, tt.want)
+				t.Errorf("VowelCount(s string) = %v, want %v", got, tt.want)
 			}
 		})
 	}
