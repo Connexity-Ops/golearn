@@ -5,7 +5,7 @@ Return the LCM of the array.
 
 ## Example
 ```go
-  lcm, err := LcmCalc([]int{3,5,15,30})
+  lcm := LcmCalc([]int{3,5,15,30})
 
 ```
 Returns:
