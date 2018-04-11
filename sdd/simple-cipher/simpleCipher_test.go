@@ -53,7 +53,7 @@ func Test_simpleEncrpyt(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := simpleEncrpyt(tt.args); !reflect.DeepEqual(got, tt.wants) {
-				t.Errorf("toNum() = %v, wants %v", got, tt.wants)
+				t.Errorf("simpleEncrpyt() = %v, wants %v", got, tt.wants)
 			}
 		})
 	}
