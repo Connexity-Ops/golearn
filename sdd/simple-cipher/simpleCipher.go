@@ -7,5 +7,5 @@ package simpleCipher
 // If the character is a space then the return code is a 0.
 // All punctuation and special characters are ignored.
 func simpleEncrpyt(r string) []int {
-	// TODO return and array of integers mapping to string.
+	// TODO return an array of integer(s) mapping to string.
 }
