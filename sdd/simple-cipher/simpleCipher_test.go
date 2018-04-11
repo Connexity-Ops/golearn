@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_toNum(t *testing.T) {
+func Test_simpleEncrpyt(t *testing.T) {
 	type args struct {
 		r string
 	}
@@ -52,7 +52,7 @@ func Test_toNum(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := toNum(tt.args); !reflect.DeepEqual(got, tt.wants) {
+			if got := simpleEncrpyt(tt.args); !reflect.DeepEqual(got, tt.wants) {
 				t.Errorf("toNum() = %v, wants %v", got, tt.wants)
 			}
 		})
