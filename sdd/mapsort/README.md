@@ -1,11 +1,11 @@
 Map Sort KxV
 ======
 
-Sorts (ascending) `map[string]int` keys (`string`) by unqiue values (`int`) into a mutable array slice of key/value pairs.
+Sorts `map[string]int` keys (`string`) by unqiue values (`int`) in ascending order into a mutable array slice of key/value pairs.
 
 ## Example
 ```go
-  fmt.Println(MapSort(potusNum))
+fmt.Println(MapSort(potusNum))
 ```
 Returns:
 ```go
