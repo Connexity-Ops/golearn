@@ -9,7 +9,7 @@ package simplecipher
 
 func simpleEncrpyt(r string) []int {
 	// TODO return an array of integer(s) mapping to string.
-	var ret []int
+	ret := []int{}
 	for i := 0; i < len(r); i++ {
 		c := int(r[i])
 
