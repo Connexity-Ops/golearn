@@ -1,7 +1,7 @@
 Map Sort KxV
 ======
 
-Sorts `map[string]int` keys (`string`) by unqiue values (`int`) in ascending order into a mutable array slice of key/value pairs.
+Sorts a `map[string]int`'s keys [`string`] by unique values [`int`], in ascending order, into a mutable array slice of key/value pairs.
 
 ## Example
 ```go
