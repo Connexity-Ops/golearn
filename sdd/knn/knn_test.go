@@ -61,7 +61,7 @@ func TestKNNClassifier(t *testing.T) {
 }
 
 func ExampleKNNClassifier() {
-	knn := NewKNNClassifier(4)
+	knn := NewKNNClassifier(2)
 	trainingSet := []*Sample{
 		NewSample([]float64{0.0, 0.0}, "red"),
 		NewSample([]float64{1.0, 1.0}, "red"),
