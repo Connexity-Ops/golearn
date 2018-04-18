@@ -18,4 +18,4 @@ Returns:
 ```
 
 ## Notes
-The public API is located at https://api.lyrics.ovh/v1/<BandName>/<SongName> and requires no key.
+The public API is located at https://api.lyrics.ovh/v1/BANDNAME/SONGNAME and requires no key.
