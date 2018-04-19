@@ -5,6 +5,24 @@ import (
 	"testing"
 )
 
+func BenchmarkfibonacciSequence10(b *testing.B) {
+        for n := 0; n < b.N; n++ {
+                fibonacciSequence(10)
+        }
+}
+
+func BenchmarkfibonacciSequence50(b *testing.B) {
+        for n := 0; n < b.N; n++ {
+                fibonacciSequence(50)
+        }
+}
+
+func BenchmarkfibonacciSequence100(b *testing.B) {
+        for n := 0; n < b.N; n++ {
+                fibonacciSequence(100)
+        }
+}
+
 func Test_fibonacciSequence(t *testing.T) {
 	type args struct {
 		n int
