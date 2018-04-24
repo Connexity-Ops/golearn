@@ -24,7 +24,7 @@ func (sl *SongLyrics) Populate(b, s string) {
 	sl.parseError = json.NewDecoder(resp.Body).Decode(sl)	
 }
 
-func (sl *SongLyrics) ToString() string {
+func (sl SongLyrics) String() string {
 	if sl.SearchError != "" {
 		return sl.SearchError
 	}
@@ -36,7 +36,7 @@ func GetLyrics(b, s string) string {
 	var song SongLyrics
 
 	song.Populate(b, s)
-	return song.ToString()
+	return fmt.Sprint(song)
 
 }
 
