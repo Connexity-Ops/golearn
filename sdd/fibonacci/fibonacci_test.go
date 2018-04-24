@@ -10,13 +10,15 @@ func benchmarkFibonacciSequence(i int, b *testing.B) {
 		FibonacciSequence(i)
 	}
 }
-func BenchmarkFibonacciSequence1(b *testing.B)   { benchmarkFibonacciSequence(1, b) }
-func BenchmarkFibonacciSequencei10(b *testing.B) { benchmarkFibonacciSequence(10, b) }
-func BenchmarkFibonacciSequence15(b *testing.B)  { benchmarkFibonacciSequence(15, b) }
-func BenchmarkFibonacciSequence20(b *testing.B)  { benchmarkFibonacciSequence(20, b) }
+func BenchmarkFibonacciSequence1(b *testing.B)  { benchmarkFibonacciSequence(1, b) }
+func BenchmarkFibonacciSequence10(b *testing.B) { benchmarkFibonacciSequence(10, b) }
+func BenchmarkFibonacciSequence15(b *testing.B) { benchmarkFibonacciSequence(15, b) }
+func BenchmarkFibonacciSequence20(b *testing.B) { benchmarkFibonacciSequence(20, b) }
 
-// func BenchmarkFibonacciSequence50(b *testing.B)  { benchmarkFibonacciSequence(50, b) }
-// func BenchmarkFibonacciSequence100(b *testing.B) { benchmarkFibonacciSequence(100, b) }
+func BenchmarkFibonacciSequence25(b *testing.B) { benchmarkFibonacciSequence(25, b) }
+
+func BenchmarkFibonacciSequence30(b *testing.B) { benchmarkFibonacciSequence(30, b) }
+func BenchmarkFibonacciSequence40(b *testing.B) { benchmarkFibonacciSequence(40, b) }
 
 func Test_FibonacciSequence(t *testing.T) {
 	type args struct {
