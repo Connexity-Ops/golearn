@@ -1,29 +1,24 @@
-package fibonacci_sequence
+package fibonaccisequence
 
 import (
 	"reflect"
 	"testing"
 )
 
-func BenchmarkfibonacciSequence10(b *testing.B) {
-        for n := 0; n < b.N; n++ {
-                fibonacciSequence(10)
-        }
+func benchmarkFibonacciSequence(i int, b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		FibonacciSequence(i)
+	}
 }
+func BenchmarkFibonacciSequence1(b *testing.B)   { benchmarkFibonacciSequence(1, b) }
+func BenchmarkFibonacciSequencei10(b *testing.B) { benchmarkFibonacciSequence(10, b) }
+func BenchmarkFibonacciSequence15(b *testing.B)  { benchmarkFibonacciSequence(15, b) }
+func BenchmarkFibonacciSequence20(b *testing.B)  { benchmarkFibonacciSequence(20, b) }
 
-func BenchmarkfibonacciSequence50(b *testing.B) {
-        for n := 0; n < b.N; n++ {
-                fibonacciSequence(50)
-        }
-}
+// func BenchmarkFibonacciSequence50(b *testing.B)  { benchmarkFibonacciSequence(50, b) }
+// func BenchmarkFibonacciSequence100(b *testing.B) { benchmarkFibonacciSequence(100, b) }
 
-func BenchmarkfibonacciSequence100(b *testing.B) {
-        for n := 0; n < b.N; n++ {
-                fibonacciSequence(100)
-        }
-}
-
-func Test_fibonacciSequence(t *testing.T) {
+func Test_FibonacciSequence(t *testing.T) {
 	type args struct {
 		n int
 	}
@@ -55,8 +50,8 @@ func Test_fibonacciSequence(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := fibonacciSequence(tt.args); !reflect.DeepEqual(got, tt.wants) {
-				t.Errorf("fibonacciSequence(%d) = %v, wants %v", tt.args, got, tt.wants)
+			if got := FibonacciSequence(tt.args); !reflect.DeepEqual(got, tt.wants) {
+				t.Errorf("FibonacciSequence(%d) = %v, wants %v", tt.args, got, tt.wants)
 			}
 		})
 	}
