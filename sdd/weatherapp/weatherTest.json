@@ -1,0 +1,47 @@
+[  
+    {  
+       "main":{  
+          "temp":68.46
+       },
+       "country":"US",
+       "name":"Santa Monica",
+       "cod":200
+    },
+    {  
+       "main":{  
+          "temp":101.7
+       },
+       "country":"US",
+       "name":"Phoenix",
+       "cod":200
+    },
+    {  
+       "main":{  
+          "temp":45.5
+       },
+       "country":"RU",
+       "name":"Moscow",
+       "cod":200
+    },
+    {  
+       "main":{  
+          "temp":44.6
+       },
+       "country":"GB",
+       "name":"Greenland",
+       "cod":200
+    },
+    {  
+       "main":{  
+          "temp":82.52
+       },
+       "country":"GA",
+       "name":"Tahiti",
+       "cod":200
+    },
+    {  
+       "cod":"404",
+       "message":"city not found"
+    }
+ ]
+ 
