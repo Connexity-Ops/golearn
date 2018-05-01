@@ -1,6 +1,7 @@
 package objectify
 
 import (
+	"errors"
 	"reflect"
 	"strconv"
 	"strings"
@@ -14,11 +15,12 @@ type Object struct {
 }
 
 // Objectify takes an array of strings and returns them as objects of struct type.
-func Objectify(input []string) ([]*Object, bool) {
+func Objectify(input []string) ([]*Object, error) {
+	err := errors.New("")
 	v := new(Object)
 	s := reflect.ValueOf(v).Elem()
 	if len(input) > 0 && len(input) < s.NumField() {
-		return nil, false
+		err = errors.New("Bad input")
 	}
 	res := []*Object{}
 	for _, items := range input {
@@ -39,5 +41,5 @@ func Objectify(input []string) ([]*Object, bool) {
 		res = append(res, r)
 	}
 
-	return res, true
+	return res, err
 }
